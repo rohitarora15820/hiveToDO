@@ -34,15 +34,19 @@ class ToDoTile extends StatelessWidget {
             children: [
               //checkBox
               Checkbox(
+                checkColor: Colors.black,
+                fillColor: MaterialStateProperty.all(Colors.white),
                 value: taskCOmpleted,
                 onChanged: onChanged,
-                activeColor: Colors.black,
+                activeColor: Colors.white,
               ),
 
               //task name
               Text(
                 taskName,
                 style: TextStyle(
+                    color: Colors.white,
+                    decorationThickness: 2,
                     decoration: taskCOmpleted
                         ? TextDecoration.lineThrough
                         : TextDecoration.none),
@@ -50,7 +54,7 @@ class ToDoTile extends StatelessWidget {
             ],
           ),
           decoration: BoxDecoration(
-              color: Colors.yellow, borderRadius: BorderRadius.circular(12)),
+              color: Colors.black, borderRadius: BorderRadius.circular(12)),
         ),
       ),
     );

@@ -73,13 +73,14 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.yellow[200],
+        backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
           centerTitle: true,
           title: const Text('To Do'),
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black,
           onPressed: createNewTask,
           child: const Icon(Icons.add),
         ),
